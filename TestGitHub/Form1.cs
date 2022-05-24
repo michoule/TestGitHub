@@ -20,5 +20,17 @@ namespace TestGitHub
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (this.textBox1.Text == "admin" && this.textBox2.Text == "123123")
+            {
+                indexForm index = new indexForm();
+                index.Show();
+            }
+            else {
+                MessageBox.Show("账号或密码错误！","错误",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+        }
     }
 }
